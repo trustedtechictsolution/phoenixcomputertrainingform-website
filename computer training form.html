@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computer Training Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 120px;
+      height: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #006400;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .checkbox-group {
+      margin-top: 10px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: block;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #228B22;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #006400;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="TRUSTED logo.png" alt="Training Center Logo">
+    </div>
+    <h2>Computer Training Registration Form</h2>
+    <form action="https://formspree.io/f/mvgqzbaz" method="POST">
+      <label>Full Name</label>
+      <input type="text" name="full_name" required>
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob">
+
+      <label>Gender</label>
+      <select name="gender">
+        <option value="">-- Select --</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Home Address</label>
+      <textarea name="address" rows="2"></textarea>
+
+      <label>Emergency Contact Name</label>
+      <input type="text" name="emergency_name">
+
+      <label>Emergency Contact Phone</label>
+      <input type="tel" name="emergency_phone">
+
+      <label>Select Course(s)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="courses" value="Basic Computer"> Basic Computer Appreciation</label>
+        <label><input type="checkbox" name="courses" value="Microsoft Office"> Microsoft Word / Excel / PowerPoint</label>
+        <label><input type="checkbox" name="courses" value="Internet"> Internet & Email</label>
+        <label><input type="checkbox" name="courses" value="Web Design"> Web Design (HTML, CSS, JS)</label>
+        <label><input type="checkbox" name="courses" value="Graphics"> Graphics Design (CorelDRAW, Photoshop)</label>
+        <label><input type="checkbox" name="courses" value="Programming"> Programming (Python, JavaScript)</label>
+      </div>
+
+      <label>Preferred Training Type</label>
+      <select name="training_type">
+        <option value="">-- Select --</option>
+        <option>Physical Class</option>
+        <option>Online (Zoom/Google Meet)</option>
+      </select>
+
+      <label>Training Duration</label>
+      <select name="duration">
+        <option value="">-- Select --</option>
+        <option>1 Month</option>
+        <option>2 Months</option>
+        <option>3 Months</option>
+        <option>Custom</option>
+      </select>
+
+      <label>Start Date</label>
+      <input type="date" name="start_date">
+
+      <label>Fee Paid (₦)</label>
+      <input type="number" name="fee">
+
+      <label>Payment Method</label>
+      <select name="payment_method">
+        <option value="">-- Select --</option>
+        <option>Cash</option>
+        <option>Bank Transfer</option>
+        <option>POS</option>
+      </select>
+
+      <label>Additional Notes</label>
+      <textarea name="notes" rows="3"></textarea>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+</body>
+</html>
